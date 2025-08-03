@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const taskInput = document.getElementById('task-input');
     const taskList = document.getElementById('task-list');
 
+    // Load existing tasks if there are any
     loadTasks();
     function loadTasks() {
         const storedTasks = JSON.parse(localStorage.getItem('tasks') || '[]');
